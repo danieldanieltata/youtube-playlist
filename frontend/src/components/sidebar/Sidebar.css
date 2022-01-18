@@ -1,0 +1,35 @@
+.sidebar-container {
+    margin: 20px;
+}
+
+.action-section-container {
+    display: flex;
+    flex-direction: row;
+
+    margin: 20px;
+}
+
+.list-group {
+    margin: 20px;
+    height: 300px;
+
+    overflow-y: scroll;
+}
+
+.search-bar { 
+    width: 400px;
+    margin-right: 10px;
+}
+
+.url-text {
+    margin-right: 10px;
+}
+
+.remove-button {
+    color: white;
+    cursor: pointer;
+}
+
+.list-group-item {
+    max-height: 400px;
+}
