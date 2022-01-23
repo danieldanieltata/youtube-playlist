@@ -1,6 +1,7 @@
 class RequestService {
     getRequestUrl() {
-        return process.env.REACT_APP_BACK_END_URL;
+        // TODO: Should be in process.env
+        return "http://localhost:8080/api";
     }
 
     async getList() {

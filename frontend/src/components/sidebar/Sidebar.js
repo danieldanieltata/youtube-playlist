@@ -7,6 +7,10 @@ function Sidebar(props) {
     let [videoInput, setVideoInput] = useState('');
 
     function onAddClicked() {
+        if (!videoInput) {
+            return;
+        }
+        
         const videoId = videoInput.split('v=')[1];
         props.onAddClickedEvent({ url: videoInput, videoId });
 

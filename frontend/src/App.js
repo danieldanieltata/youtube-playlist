@@ -35,7 +35,8 @@ function App() {
     };
 
     function initSocketIo() {
-      const socketIoUrl = process.env.REACT_APP_SOCKET_IO_URL;
+      // TODO: SocketIo URL should be in process.env
+      const socketIoUrl = "http://localhost:8080/";
       const newSocket = socketIo.connect(socketIoUrl);
 
       socketRef.current = newSocket;
